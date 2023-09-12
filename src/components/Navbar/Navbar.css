@@ -1,0 +1,80 @@
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+   background-color: #181934c2;
+   backdrop-filter: blur(3px) saturate(180%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.Links-container{
+    height: 100%;
+    display: flex;
+}
+.Fa-link{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+    margin-inline-end: 10px;  
+    font-size: 44px;
+    transition: transform 0.3s ease;
+   color: #fff;
+}
+.Fa-link1{
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
+  margin-inline-end: 10px;  
+  font-size: 44px;
+ 
+ color: #fff;
+}
+.Fa-link:hover {
+  transform: scale(1.1) rotate(-10deg); /* Escala el elemento al 110% y lo rota 20 grados a la derecha */
+  cursor: pointer;
+}
+.Cv-container{
+    text-align: center;
+}
+.Fa-cv{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+    margin-inline-end: 10px;  
+    font-size: 24px;
+   color: #fff;
+}
+.ov-btn-grow-skew {
+    background: #fff; /* color de fondo */
+    color: #4741d7; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-skew:hover {
+    color: #fff;/* color de fuente hover */
+  }
+  .ov-btn-grow-skew::after {
+    content: "";
+    background: #4741d7; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .ov-btn-grow-skew:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }

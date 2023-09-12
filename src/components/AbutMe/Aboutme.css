@@ -1,0 +1,61 @@
+.Data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #667a83;
+    padding-bottom: 15px;
+    
+   
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+}
+
+.Skill-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    
+    margin: 0 10px; 
+}
+.skills-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+}
+.skill-title{
+    font-size: 32px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+.ICON {
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+  }
+  
+  .ICON:hover {
+    transform: scale(1.1) rotate(20deg); /* Escala el elemento al 110% y lo rota 20 grados a la derecha */
+    cursor: pointer;
+  }
+  
+  .Certificados-container{
+    display: flex;
+    gap: 20px;
+    
+    height: 470px;
+  }
+  .Certificado{
+    background-image: url(../../Assets/certificado.png);
+    background-size: 100%;
+    height: 100%;
+    width: 600px;
+  }
